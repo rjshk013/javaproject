@@ -1,3 +1,15 @@
 This repo contains sample java project application.
 
 1.clone the repo https://github.com/rjshk013/javaproject 
+
+go to folder complete
+
+Inorder to get jar file need to build using maven clean install
+
+Build Docker image as per the Dockerfile in the folder 
+
+docker build . -t spring-mvc-sample-image
+
+run the container as :
+
+docker run -t -p 8085:8080 --name sample-mvc-sample-container1 spring-mvc-sample-image
